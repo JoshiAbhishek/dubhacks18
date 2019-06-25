@@ -1,0 +1,169 @@
+body {
+    padding-top: 0em;
+    text-align: center;
+
+    background-image: url("./images/dh15.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+section {
+    margin: 0em;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+#top-dubhacks-image {
+    position: absolute;
+    left:35px;
+    top:35px;
+    height: 3em;
+}
+
+#dh-stats-welcome-section {
+    padding-top: 12.5%;
+    padding-bottom: 12.5%;
+
+    background-color: rgba(237, 71, 142, .8);
+}
+
+.dropdown-toggle-split {
+    padding-left: 3em;
+    padding-right: 3em;
+
+    font-size: 5em;
+}
+
+#year-dropdown {
+    width: 100%;
+    padding: 0em;
+}
+
+.navbar {
+    background-color: #ffffff !important;
+    max-width: 100%;
+}
+
+#dh-stats-year-dropdown-nav{
+    padding: 0em;
+    background-color: #ffffff !important;
+    z-index: 1000;
+    width: 100% !important;
+}
+
+#year-dropdown-title-button {
+    padding-left: 1em;
+}
+
+#year-dropdown-title-button p, h2, h3, h4, h5, h6 {
+    margin-bottom: 0em;
+}
+
+#dh-stats-intro-section {
+    padding-top: 7.5%;
+    padding-bottom: 7.5%;
+}
+
+.row {
+    max-width: 100%;
+}
+
+#dh-stats-intro-letter {
+    color: #ffffff;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2.5em;  
+    padding-top: 4em;
+}
+
+#dh-stats-intro-graphic {
+    max-width: 82.5%;
+    margin: 0em;
+    padding-top: 7.5%;
+    padding-bottom: 7%;
+}
+
+#class-stats-title {
+    margin-bottom: 1em;
+}
+
+.stats-wrapper {
+    padding-top: 7em;
+    padding-bottom: 5em;
+}
+
+.stat-item p {
+    margin-bottom: 2em !important;
+}
+
+.stat-item-inline > h1, .stat-item-inline > h2, .stat-item-inline > h3, .stat-item-inline > h4, .stat-item-inline > h5, .stat-item-inline > h6, .stat-item-inline > p, .stat-item-inline > h2 p {
+    /*
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    */
+    padding-bottom: 0em !important;
+    margin-bottom: 0em !important;
+    line-height: 125px !important;
+    vertical-align: bottom !important;
+}
+
+.general-stats-wrapper {
+
+}
+
+.chart-canvas {
+    margin-right: auto;
+    margin-left: auto;
+
+    margin-top: 7em;
+    margin-bottom: 7em;
+}
+
+footer {
+    padding: 5em;
+    padding-bottom: 3em;
+}
+
+footer p {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.footer-dubhacks-logo {
+    max-height: 50px !important;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
+    transform-style: preserve-3d;
+}
+
+@media(max-width: 992px) {
+    #dh-stats-intro-letter {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #dh-stats-intro-graphic {
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .really-big-title {
+        font-size: 10em !important;
+        line-height: 180px !important;
+    }
+
+    #dh-stats-welcome-section h1 {
+        padding-top: 1em;
+        font-size: 5em !important;
+        line-height: 120px !important;
+    }
+
+    #year-dropdown-title-button h6 {
+        font-size: 1.5em !important;
+    }
+}

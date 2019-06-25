@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>DubHacks</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela:400%7CSpace+Mono:regular,700%7CWork+Sans:regular,500,600,700">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./prizes-style.css">
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".judge-pic").hover(function(){
+            $(this).css("-webkit-filter", "blur(5px)");
+            }, function(){
+            $(this).css("-webkit-filter", "blur(0px)");
+        });
+    });
+</script>
+
+<body>
+    <nav id="top-navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" target="_self"><img src="./images/Logo-Large.png" alt="DUBHACKS" href="#home"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="apis.html" target="_self">APIs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="prizes.html">PRIZES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="map.html">MAP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">INFO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="tracks-container">
+        <div class="row category-title" id="tracks-title">
+            <h1 class="white-text medium-title">TRACKS</h1>
+        </div>
+        <div class="row" id="tracks-descript">
+            <div class="col-sm-4">
+                <div class="tracks-img-container">
+                    <img class="row tracks-img" src="images/data.svg" />
+                    <h2 class="white-text tracks-img-title">DATA</h2>
+                    <p class="white-text tracks-img-descript">Data is being generated faster than ever with every click, tap, and swipe on your screen. This track focuses on finding ways to understand and utilize this data to inform and empower others.</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="tracks-img-container">
+                    <img class="tracks-img" src="images/accessibility.svg" />
+                    <h2 class="white-text tracks-img-title">ACCESSIBILITY</h2>
+                    <p class="white-text tracks-img-descript">Modern technology can help us identify and address issues of inequality and accessibility within our local communities. In choosing this track, you are working to create a more equitable and inclusive future for all.</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="tracks-img-container">
+                    <img class="tracks-img" src="images/classic.svg" />
+                    <h2 class="white-text tracks-img-title">CLASSIC</h2>
+                    <p class="white-text tracks-img-descript">Our ability to make a difference in our communities depends on our individual experiences and backgrounds. This track gives you the freedom to tackle the social good issue most important to you in whatever way you wish.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br />
+    <br />
+    <br />
+    <br />
+    
+    <div class="other-container" id="sponsor-prize-container">
+        <div class="category-title row" id="sponsors-title">
+            <h1 class="white-text medium-title">SPONSORS</h1>
+        </div>
+        <div class="row sponsor-row">
+            <div class="col-sm-4">
+                <div class="sponsor-container">
+                    <img class="sponsor-pic" src="images/sponsor-logos/Lyft_Logo_Pink.svg" />
+                    <div class="text">
+                        <h5 class="sponsor-title white-text">Best Transportation Hack</h5>
+                        <p class="sponsor-prize white-text">Lyft Credits</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="sponsor-container">
+                    <div class="sponsor-pic">
+                        <img id="blackrock-pic" src="images/sponsor-logos/blackrock.svg" />
+                    </div>
+                    <div class="text">
+                        <h5 class="sponsor-title white-text">Best Use of BlackRock API</h5>
+                        <p class="sponsor-prize white-text">Drone</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="sponsor-container" id="qualtrics-container">
+                    <div class="sponsor-pic">
+                        <img id="qualtrics-pic" src="images/sponsor-logos/qualtrics.png" />
+                    </div>
+                    <div class="text">
+                        <h5 class="sponsor-title white-text">Best Use of Data Visualization with Qualtrics</h5>
+                        <p class="sponsor-prize white-text">A bike, snowboard, or longboard</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="sponsor-container">
+                    <div class="sponsor-pic">
+                        <img id="microsoft-pic" src="images/sponsor-logos/microsoft.png" />
+                    </div>
+                    <div class="text">
+                        <h5 class="sponsor-title white-text">Azure Champ Prize</h5>
+                        <p class="sponsor-prize white-text">Entry in Imagine Cup 2019 Semi-Finals<br />Chance to become an elite team at regional finals<br />Xbox One X</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="sponsor-container">
+                    <div class="sponsor-pic">
+                        <img id="google-pic" src="images/sponsor-logos/google.png" />
+                    </div>
+                    <div class="text">
+                        <h5 class="sponsor-title white-text">Best Use of Google Cloud Platform</h5>
+                        <p class="sponsor-prize white-text">Google Home Minis</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="sponsor-container" id="qualtrics-container">
+                    <div class="sponsor-pic">
+                        <img id="facebook-pic" src="images/sponsor-logos/facebook.svg" />
+                    </div>
+                    <div class="text">
+                        <h5 class="sponsor-title white-text">Facebook Hack</h5>
+                        <p class="sponsor-prize white-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <br />
+    <br />
+    <br />
+    <br />
+    
+    <div class="other-container" id="mlh-container">
+        <div class="category-title row" id="sponsors-title">
+            <h1 class="white-text medium-title">MLH PRIZES</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="mlh-container">
+                    <div class="mlh-pic-container">
+                        <img class="mlh-pic" id="mlh-img" src="images/sponsor-logos/mlh.png" />
+                    </div>
+                    <h4 class="mlh-title white-text">Top Teams Overall</h4>
+                    <p class="mlh-prize white-text">MLH Winner Medals</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="mlh-container">
+                    <div class="mlh-pic-container">
+                        <img class="mlh-pic" src="images/sponsor-logos/algolia.svg" />
+                    </div>
+                    <h4 class="mlh-title white-text">Best Use of Algolia</h4>
+                    <p class="mlh-prize white-text">Casio CA-506C-5A Calculator Watches</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="mlh-container">
+                    <div class="mlh-pic-container">
+                        <img class="mlh-pic" style="max-width: 80%" src="images/sponsor-logos/authorize.png" />
+                    </div>
+                    <h4 class="mlh-title white-text">Best Use of Authorize.Net</h4>
+                    <p class="mlh-prize white-text">LS20 Gaming Headsets</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="mlh-container">
+                    <div class="mlh-pic-container">
+                        <img class="mlh-pic" src="images/sponsor-logos/domain.svg" />
+                    </div>
+                    <h4 class="mlh-title white-text">Best Domain Registered with Domain.com</h4>
+                    <p class="mlh-prize white-text">Raspberry Pis <br/> PiHut Essential Kits</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="mlh-container">
+                    <div class="mlh-pic-container">
+                        <img class="mlh-pic" id="mlh-img" src="images/sponsor-logos/github.svg" />
+                    </div>
+                    <h4 class="mlh-title white-text">Best Octocat Drawing</h4>
+                    <p class="mlh-prize white-text">Octocat Plushie</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="mlh-container">
+                    <div class="mlh-pic-container">
+                        <img class="mlh-pic" style="max-height: 90%" src="images/sponsor-logos/snap.png" />
+                    </div>
+                    <h4 class="mlh-title white-text">Snap Kit Weekly Challenge</h4>
+                    <p class="mlh-prize white-text">Spectacles by Snapchat</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="mlh-container">
+                    <div class="mlh-pic-container">
+                        <img class="mlh-pic" style="max-height: 90%" src="images/sponsor-logos/here.png" />
+                    </div>
+                    <h4 class="mlh-title white-text">Best Use of HERE.com</h4>
+                    <p class="mlh-prize white-text">HERE.com hacker gear and swag</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="mlh-container">
+                    <div class="mlh-pic-container">
+                        <img class="mlh-pic" src="images/sponsor-logos/qualcomm.png" />
+                    </div>
+                    <h4 class="mlh-title white-text">Best IoT Hack using a Qualcomm Device</h4>
+                    <p class="mlh-prize white-text">DragonBoard 410Cs</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="mlh-container">
+                    <div class="mlh-pic-container">
+                        <svg class="cisco mlh-pic" xmlns="https://www.w3.org/2000/svg" width="108" height="57" viewBox="0 0 108 57" role="img">
+                            <g fill="#1BA0D7" fill-rule="evenodd">
+                                <path d="M41.69 52.125l-.019 4.308.315.054c.989.185 1.987.313 2.99.385a18.1 18.1 0 0 0 2.642.051c.842-.06 1.675-.218 2.48-.468a6.862 6.862 0 0 0 2.573-1.371 5.19 5.19 0 0 0 1.498-2.148 5.912 5.912 0 0 0-.03-4.324 4.852 4.852 0 0 0-1.343-1.862 5.568 5.568 0 0 0-1.97-1.147l-3.25-1.206a1.742 1.742 0 0 1-.887-.845 1.107 1.107 0 0 1 .036-.986 1.29 1.29 0 0 1 .217-.291 1.75 1.75 0 0 1 .48-.347c.363-.18.755-.293 1.158-.337a6.76 6.76 0 0 1 2.072.022c.81.088 1.613.231 2.402.43l.168.037v-3.974l-.31-.067a21.14 21.14 0 0 0-2.444-.435 12.545 12.545 0 0 0-3.213-.014 6.945 6.945 0 0 0-3.699 1.488 4.908 4.908 0 0 0-1.58 2.178 5.984 5.984 0 0 0-.003 4.05c.242.65.63 1.237 1.136 1.714.437.422.932.78 1.47 1.065.708.38 1.458.675 2.235.878.257.077.512.158.766.243l.385.141.11.045c.38.136.726.35 1.018.628.202.19.358.423.455.683.06.237.061.485.003.723a1.536 1.536 0 0 1-.744.892 3.691 3.691 0 0 1-1.239.387 9 9 0 0 1-1.92.097 21.973 21.973 0 0 1-2.507-.334c-.433-.09-.864-.19-1.291-.303l-.16-.04zM24.026 56.277v-5.002l-.098.043a9.253 9.253 0 0 1-3.605.915 5.303 5.303 0 0 1-3.63-1.07 4.644 4.644 0 0 1-1.58-2.244 5.395 5.395 0 0 1-.106-3 4.6 4.6 0 0 1 1.609-2.566 4.823 4.823 0 0 1 2.528-1.09 8.332 8.332 0 0 1 4.774.895l.108.056v-5.03l-.228-.061a12.78 12.78 0 0 0-4.552-.596 10.534 10.534 0 0 0-4.065.93 9.29 9.29 0 0 0-3.329 2.572 10.014 10.014 0 0 0-.182 12.18 9.546 9.546 0 0 0 5.292 3.403c2.211.538 4.528.456 6.697-.234l.367-.101M30.546 56.607h4.73V37.846h-4.73zM0 22.769a2.348 2.348 0 0 0 3.935 1.545c.434-.403.7-.955.744-1.545v-5.2a2.34 2.34 0 0 0-4.679 0v5.2M12.95 22.769a2.349 2.349 0 0 0 2.34 2.171 2.346 2.346 0 0 0 2.339-2.171V11.112a2.341 2.341 0 0 0-4.679 0V22.77M25.832 27.464a2.345 2.345 0 0 0 4.678 0V2.249a2.342 2.342 0 0 0-4.678 0v25.215M38.78 22.769a2.346 2.346 0 0 0 4.68 0V11.112a2.344 2.344 0 0 0-2.34-2.249 2.341 2.341 0 0 0-2.34 2.25v11.656M51.671 22.769a2.348 2.348 0 0 0 3.936 1.545c.434-.403.7-.955.743-1.545v-5.2a2.343 2.343 0 0 0-3.962-1.595c-.436.419-.693.99-.717 1.595v5.2M64.61 22.769a2.347 2.347 0 0 0 4.679 0V11.112a2.342 2.342 0 0 0-4.679 0V22.77M77.496 27.464a2.345 2.345 0 0 0 4.678 0V2.249A2.342 2.342 0 0 0 78.212.653a2.34 2.34 0 0 0-.716 1.596v25.215M90.424 22.769a2.346 2.346 0 0 0 4.679 0V11.112a2.343 2.343 0 0 0-2.34-2.249 2.342 2.342 0 0 0-2.339 2.25v11.656M103.321 22.769a2.346 2.346 0 0 0 4.68 0v-5.2a2.343 2.343 0 0 0-2.34-2.249 2.341 2.341 0 0 0-2.34 2.25v5.199M73.454 56.277v-5.002l-.098.043a9.253 9.253 0 0 1-3.606.915 5.303 5.303 0 0 1-3.629-1.07 4.645 4.645 0 0 1-1.58-2.244 5.397 5.397 0 0 1-.107-3 4.6 4.6 0 0 1 1.61-2.566 4.822 4.822 0 0 1 2.527-1.09 8.334 8.334 0 0 1 4.775.895l.108.056v-5.03l-.229-.061a12.78 12.78 0 0 0-4.551-.596 10.536 10.536 0 0 0-4.066.929 9.296 9.296 0 0 0-3.328 2.572 10.014 10.014 0 0 0-.182 12.181 9.545 9.545 0 0 0 5.292 3.403c2.21.538 4.528.456 6.696-.234l.368-.101M85.305 43.386a4.934 4.934 0 1 1 6.157 7.711 4.934 4.934 0 0 1-6.157-7.71m-6.867 3.848A9.87 9.87 0 0 0 90.44 56.72a9.629 9.629 0 0 0 3.157-17.729 9.934 9.934 0 0 0-15.16 8.244"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <h4 class="mlh-title white-text">Best Use of the Cisco Webex Teams API</h4>
+                    <p class="mlh-prize white-text">20000 mAh power banks</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="mlh-container">
+                    <div class="mlh-pic-container">
+                        <img class="mlh-pic" style="max-height: 70%" src="images/sponsor-logos/clarifai.svg" />
+                    </div>
+                    <h4 class="mlh-title white-text">Best Use of Clarifai's API</h4>
+                    <p class="mlh-prize white-text">Hacker gear from Clarifai</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="mlh-container">
+                    <div class="mlh-pic-container">
+                        <img class="mlh-pic" style="max-height: 90%" src="images/sponsor-logos/fidelity.png" />
+                    </div>
+                    <h4 class="mlh-title white-text">Best Social Good Hack</h4>
+                    <p class="mlh-prize white-text">$50 Gift Cards</p>
+                </div>
+            </div>
+        </div>
+        <div class="row more-info">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6" id="mlh-info-button">
+                <a href="https://docs.google.com/document/d/1Daf2_En2OIWsI8jrxePI5sEtz3mwqhv-eyGDfSn5Omw/edit?usp=sharing" class="button white-text pink-background pink-hover">More Information</a>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+    
+    <br />
+    <br />
+    <br />
+    <br />
+    
+    <div class="other-container" id="judge-container">
+        <div class="category-title row" id="sponsors-title">
+            <h1 class="white-text medium-title">MEET THE JUDGES</h1>
+        </div>
+        <div class="row judge-container">
+            <div class="judge-pic">
+                <img src="images/headshots/christina_warren.png" />
+                <br />
+                <h5 class="white-text">Christina Warren</h5>
+            </div>
+            <div class="judge-pic">
+                <img id="vidya-pic" src="images/headshots/Vidya Vrat Agarwal.jpeg" />
+                <br />
+                <h5 class="white-text">Vidyra Vrat Agarwal</h5>
+            </div>
+            <div class="judge-pic">
+                <img src="images/headshots/Bernd%20Verst.JPG" />
+                <br />
+                <h5 class="white-text">Bernd Verst</h5>
+            </div>
+        </div>
+    </div>
+    
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>

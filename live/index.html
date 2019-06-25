@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>DubHacks</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela:400%7CSpace+Mono:regular,700%7CWork+Sans:regular,500,600,700">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="dh-18-styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<script>
+    function showSpeaker(dropDownElem) {
+        let elem = document.getElementById(dropDownElem);
+        if (elem.style.display === "block") {
+            document.getElementById(dropDownElem).style.display = "none";
+        } else {
+            document.getElementById(dropDownElem).style.display = "block";
+        }
+    }
+    var day = function (day) {
+        let schedule = document.getElementsByClassName('schedule-container')[0];
+        if (day === 2) {
+            let elem = document.getElementById('start-keynote');
+            let noDropDown = (elem.style.display === "none");
+            if (noDropDown) {
+                schedule.scrollTo(0, 400);
+            } else {
+                schedule.scrollTo(0, 400 + elem.clientHeight);
+            }
+        } else {
+            schedule.scrollTo(0, 0);
+        }
+    }; 
+</script>
+
+<body>
+    <nav id="top-navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="https://dubhacks.co/dh-2018-live/"><img src="./images/Logo-Large.png" alt="DUBHACKS"
+                    href="#home" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="apis.html" target="_self">APIs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="prizes.html">PRIZES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="map.html">MAP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">INFO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" id="home">
+        <div class="row">
+            <div class="col-sm-4" id="twitter">
+                <a class="twitter-timeline" href="https://twitter.com/DubHacks?ref_src=twsrc%5Etfw" data-height="600" data-chrome="noborders noheader nofooter">Tweets
+                    by DubHacks</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div class="col-sm-8">
+                <div class="schedule-container">
+                    <div class="row" id="header-row">
+                        <a href="#" class="schedule-day button white-text dark-purple-background pink-hover" onclick="day(1)">Day
+                            1
+                        </a>
+                        <a href="#" class="schedule-day button white-text dark-purple-background pink-hover" onclick="day(2)">Day
+                            2
+                        </a>
+                    </div>
+                    <div class="row" id="schedule-entries">
+                        <div class="schedule-entry pink-text">
+                            <div class="event-time">1:00</div>
+                            <div class="event-location">KANE</div>
+                            <div class="event-title">Registration</div>
+                        </div>
+
+                        <div class="schedule-entry pink-text">
+                            <div class="event-time">2:00-3:00</div>
+                            <div class="event-location">KANE</div>
+                            <div class="event-title" onclick="showSpeaker('start-keynote')">Welcoming Ceremony</div>
+                        </div>
+                        <div class="bio-container" id="start-keynote">
+                            <div class="bio row">
+                                <a class="col-sm-4" href="https://www.linkedin.com/in/filmgirl/"><img class="headshots" src="images/headshots/christina_warren.png"
+                                    /></a>
+                                <div class="bio-text col-sm-7">
+                                    <h3>Christina Warren</h3>
+                                    <p class="speaker-bio white-text">Christina Warren is a Senior Cloud Developer Advocate
+                                        at Microsoft, where she helps shape the overall video strategy for Channel 9, Docs.Microsoft.com,
+                                        and the greater CDA team. She hosts many Channel 9 shows, interviewing developers,
+                                        sharing the latest dev news, and more. She’s also a frequent speaker at tech and
+                                        development conferences. Prior to joining Microsoft, Christina spent a decade in
+                                        digital media as an editor, senior reporter, and commentator, with a focus on technology,
+                                        business, and entertainment. She has appeared as an expert or commentator on ABC,
+                                        NBC, CBS, CNN, CNBC, Fox News, Fox Business, Bloomberg, the BBC, The Today Show,
+                                        Good Morning America, and many more outlets.</p>
+                                </div>
+                            </div>
+                            <div class="bio row">
+                                <a class="col-sm-4" href="https://www.linkedin.com/in/filmgirl/"><img class="headshots" src="images/headshots/Bernd%20Verst.JPG"
+                                    /></a>
+                                <div class="bio-text col-sm-7">
+                                    <h3>Bernd Verst</h3>
+                                    <p class="speaker-bio white-text">Bernd is a Cloud Developer Advocate at Microsoft, focusing
+                                        on Linux, Containers and Python. Before joining Microsoft he worked for the US Government's
+                                        technology innovation team 18F on cloud.gov, a Platform as a Service based on Cloud
+                                        Foundry and Kubernetes, at Google Cloud Platform on the App Engine team and the launch
+                                        of Compute Engine, at Twitter on all things ad tech and deploying to Apache Mesos,
+                                        and at several startups in Silicon Valley, such as Sift Science (YCombinator Summer
+                                        '11).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="schedule-entry pink-text">
+                            <div class="event-time">3:30</div>
+                            <div class="event-location">KANE</div>
+                            <div class="event-title">Hacking Starts</div>
+                        </div>
+                        <div class="schedule-entry pink-text">
+                            <div class="event-time">3:30-4:00</div>
+                            <div class="event-location">MGH 241</div>
+                            <div class="event-title">Team Formation</div>
+                        </div>
+                        <div class="schedule-entry pink-text">
+                            <div class="event-time">4:00</div>
+                            <div class="event-location">MGH 206</div>
+                            <div class="event-title">Hardware Lab Opens</div>
+                        </div>
+                        <div class="schedule-entry pink-text">
+                            <div class="event-time">5:30-8:00</div>
+                            <div class="event-location">MGH 206</div>
+                            <div class="event-title">Disney Dinner</div>
+                        </div>
+                        <div class="schedule-entry pink-text">
+                            <div class="event-time">6:30-7:15</div>
+                            <div class="event-location">MGH 389</div>
+                            <div class="event-title">Blackrock Workshop</div>
+                        </div>
+                        <div class="schedule-entry pink-text">
+                            <div class="event-time">7:30-8:15</div>
+                            <div class="event-location">MGH 389</div>
+                            <div class="event-title">Microsoft Workshop</div>
+                        </div>
+                        <div class="schedule-entry pink-text">
+                            <div class="event-time">8:30-9:15</div>
+                            <div class="event-location">MGH 389</div>
+                            <div class="event-title">Google Workshop</div>
+                        </div>
+                        <div class="schedule-entry pink-text">
+                            <div class="event-time">9:30-10:00</div>
+                            <div class="event-location"></div>
+                            <div class="event-title">MLH Cup Stacking</div>
+                        </div>
+                        <div class="schedule-entry pink-text d2">
+                            <div class="event-time">12:00</div>
+                            <div class="event-location"></div>
+                            <div class="event-title">Midnight Snack</div>
+                        </div>
+                        <div class="schedule-entry pink-text d2">
+                            <div class="event-time">1:00</div>
+                            <div class="event-location">MGH 241</div>
+                            <div class="event-title">Code in Dark</div>
+                        </div>
+                        <div class="schedule-entry pink-text d2">
+                            <div class="event-time">2:00</div>
+                            <div class="event-location">Microsoft Lounge</div>
+                            <div class="event-title">Super Smash Bros</div>
+                        </div>
+                        <!--
+                        <div class="schedule-entry pink-text d2">
+                            <div class="event-time">2:00</div>
+                            <div class="event-time"></div>
+                            <div class="event-location">Bloomberg Lounge</div>
+                            <div class="event-title">Bloomberg Surprise</div>
+                        </div> -->
+                        <div class="schedule-entry pink-text d2">
+                            <div class="event-time">7:00-10:00</div>
+                            <div class="event-location"></div>
+                            <div class="event-title">Breakfast</div>
+                        </div>
+                        <div class="schedule-entry pink-text d2">
+                            <div class="event-time">11:00</div>
+                            <div class="event-location"></div>
+                            <div class="event-title">Lunch</div>
+                        </div>
+                        <div class="schedule-entry pink-text d2">
+                            <div class="event-time">1:00</div>
+                            <div class="event-location"></div>
+                            <div class="event-title">Submit Projects</div>
+                        </div>
+                        <div class="schedule-entry pink-text d2">
+                            <div class="event-time">2:00-4:00</div>
+                            <div class="event-location"></div>
+                            <div class="event-title">Judging</div>
+                        </div>
+
+                        <div class="schedule-entry pink-text d2">
+                            <div class="event-time">4:00-6:00</div>
+                            <div class="event-location">KANE</div>
+                            <div class="event-title" onclick="showSpeaker('end-keynote')">Closing</div>
+                        </div>
+                        <!--
+                        <div class="bio-container" id="end-keynote">
+                            <div class="bio row">
+                                <a class="col-sm-4" href="https://www.linkedin.com/in/filmgirl/"><img class="headshots" src="images/headshots/christina_warren.png" /></a>
+                                <div class="bio-text col-sm-7">
+                                    <h3>Christina Warren</h3>
+                                    <p class="speaker-bio white-text">Christina Warren is a Senior Cloud Developer Advocate at Microsoft, where she helps shape the overall video strategy for Channel 9, Docs.Microsoft.com, and the greater CDA team. She hosts many Channel 9 shows, interviewing developers, sharing the latest dev news, and more. She’s also a frequent speaker at tech and development conferences. Prior to joining Microsoft, Christina spent a decade in digital media as an editor, senior reporter, and commentator, with a focus on technology, business, and entertainment. She has appeared as an expert or commentator on ABC, NBC, CBS, CNN, CNBC, Fox News, Fox Business, Bloomberg, the BBC, The Today Show, Good Morning America, and many more outlets.</p>
+                                </div>
+                            </div>
+                            <div class="bio row">
+                                <a class="col-sm-4" href="https://www.linkedin.com/in/filmgirl/"><img class="headshots" src="images/headshots/christina_warren.png" /></a>
+                                <div class="bio-text col-sm-7">
+                                    <h3>Christina Warren</h3>
+                                    <p class="speaker-bio white-text">Christina Warren is a Senior Cloud Developer Advocate at Microsoft, where she helps shape the overall video strategy for Channel 9, Docs.Microsoft.com, and the greater CDA team. She hosts many Channel 9 shows, interviewing developers, sharing the latest dev news, and more. She’s also a frequent speaker at tech and development conferences. Prior to joining Microsoft, Christina spent a decade in digital media as an editor, senior reporter, and commentator, with a focus on technology, business, and entertainment. She has appeared as an expert or commentator on ABC, NBC, CBS, CNN, CNBC, Fox News, Fox Business, Bloomberg, the BBC, The Today Show, Good Morning America, and many more outlets.</p>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div class="sponsor-container">
+        <div class="row" style="margin-bottom: 0px;">
+            <h3 class="white-text">SPONSORS</h3>
+        </div>
+        <div class="row s-row" style="margin-bottom: 0px;">
+            <div class="col-sm-3 filler-div"></div>
+            <div class="col-sm-6">
+                <img class="sponsor-pic" src="images/sponsor-logos/microsoft.png">
+            </div>
+            <div class="col-sm-3  filler-div"></div>
+        </div>
+        <div class="row s-row" style="justify-content: center;">
+            <div class="col-sm-3">
+                <img class="sponsor-pic" id="qualtrics" src="images/sponsor-logos/qualtrics.svg">
+            </div>
+            <div class="col-sm-3">
+                <img class="sponsor-pic" src="images/sponsor-logos/blackrock.svg">
+            </div>
+            <div class="col-sm-3">
+                <img class="sponsor-pic" src="images/sponsor-logos/bloomberg.svg">
+            </div>
+        </div>
+        <div class="row s-row" style="justify-content: center;">
+            <div class="col-sm-3">
+                <img class="sponsor-pic" src="images/sponsor-logos/waltdisney.png">
+            </div>
+            <div class="col-sm-3">
+                <img class="sponsor-pic" src="images/sponsor-logos/googleSVG.svg">
+            </div>
+            <div class="col-sm-3">
+                <img class="sponsor-pic" src="images/sponsor-logos/lyftwhite.svg">
+            </div>
+        </div>
+        <div class="row s-row" style="justify-content: center;">
+            <div class="col-sm-3">
+                <img class="sponsor-pic" src="images/sponsor-logos/facebook.svg">
+            </div>
+            <div class="col-sm-3">
+                <img class="sponsor-pic" src="images/sponsor-logos/amazon.svg">
+            </div>
+            <div class="col-sm-3">
+                <img class="sponsor-pic white" src="images/sponsor-logos/slalombuild.png">
+            </div>
+        </div>
+        <div class="row s-row" style="justify-content: center;">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-3">
+                <img class="sponsor-pic white" style="filter: brightness(100);" src="images/sponsor-logos/cray.png">
+            </div>
+            <div class="col-sm-3">
+                <img class="sponsor-pic white" src="images/sponsor-logos/trueform.png">
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>

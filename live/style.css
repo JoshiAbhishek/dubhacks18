@@ -1,0 +1,19 @@
+body {
+    margin: 0; 
+    padding: 0;
+}
+
+.wrapper {
+    display: grid; 
+    grid-template-rows: 100px 1fr; 
+    min-width: 100%; 
+}
+
+.menu {
+    grid-row: 1 / 2; 
+    background-color: black; 
+}
+
+.content {
+    grid-row: 2 / 3; 
+}

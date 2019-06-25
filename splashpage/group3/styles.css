@@ -1,0 +1,499 @@
+#group3-container {
+    display: inline !important;
+}
+
+body {
+    padding: 0em;
+    margin: 0em;
+/*    border: #31e4fd 10px solid;
+*/    font-family: 'Work Sans', sans-serif;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: scroll;
+}
+
+a:hover, a:focus, a:target {
+    text-decoration: none !important;
+}
+
+.row {
+    width: 100% !important;
+    margin: 0em !important;
+}
+
+.bottom {
+    font-size:10px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white !important;
+    opacity: .7 !important; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white !important;
+}
+
+.fab, .far {
+    font-size: 1.5em !important;
+    
+    margin-left: .25em !important;
+    margin-right: .25em !important;
+    margin-top: .15em !important;
+    margin-bottom: .15em !important;
+    
+    color: white;
+    opacity: .5;
+}
+
+.fab:hover, .fab:focus, .fab:target, .far:hover, .far:focus, .far:target {
+    opacity: .7 !important;
+}
+
+#main-row {
+    height: 100% !important;
+
+    border: #6046f8 10px solid;
+    height: 100vh !important;
+}
+
+#left-pane {
+    max-height: 100%;
+/*    changed this 
+*/    max-width:100%;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow:hidden;
+}
+
+#right-pane {
+    background-color: #ed1973;
+    color: white;
+    overflow:scroll;
+    height: 100%;
+    padding-left: 30px;
+}
+
+.main-img {
+    max-height: 80%;
+    position: absolute;
+    vertical-align: middle;
+    overflow: hidden;
+    top: 0; 
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#logo {
+    max-height: 45px;
+    max-width: 151px;
+}
+
+#social-links {
+    text-align: left;
+    white-space: nowrap;
+    padding-bottom: 5px;
+
+}
+#social-links img {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#title-content h1 {
+    margin-bottom: 1em;
+    font-size:14px;
+}
+
+#title-content {
+    padding-top: 5vh;
+    margin-bottom: 5vh;
+    max-width:100%;
+    max-height: 100%;
+}
+
+#title-content h4 {
+    font-size: 1em;
+}
+
+#title-content img {
+    width: 100%;
+    height: 100%;
+    max-width: 225px;
+}
+
+#email-form input {
+    margin-bottom: 1em;
+    max-width: 15em;
+
+    color: white;
+
+    box-shadow: none !important;
+
+    border-radius: 0em;
+
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 2px white solid !important;
+}
+
+#email-form {
+    margin-bottom: 5vh;
+}
+
+.middle {
+    display: block;
+    margin:auto;
+}
+
+.btn-primary {
+    color: #6046f8;
+    border: none;
+}
+
+#mid-section {
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+#core-beliefs span {
+    opacity:1.0;
+    display: inline-block;
+}
+
+#core-beliefs h6 {
+    display: inline;
+    opacity:0.5 !important;
+    font-size:14px;
+}
+.building {
+    padding:10px;
+
+}
+
+#core-beliefs img{
+    padding-right:10px;
+}
+
+.made-love {
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.bottom {
+    position: relative;
+    font-size: 14px;
+}
+
+#submit {
+    width: 100% !important;
+    max-width: 15em;
+    background-color: #6046f8 !important;
+}
+
+.opaq-text {
+    color: white !important;
+    opacity: 0.5;
+}
+
+.shape {
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+#group13 {
+    height: 8vh;
+    transform: translate(calc(-65 / 727 * 100vh), calc(-212 / 727 * 100vh));
+
+    animation-name: shift-8;
+    animation-duration: 4s;
+}
+
+#group12 {
+    height: 10vh;
+    transform: translate(calc(-80 / 727 * 100vh), calc(25 / 727 * 100vh));
+
+    animation-name: shift-10;
+    animation-duration: 6s;
+}
+
+#group6 {
+    height: 8vh;
+    transform: translate(calc(-25 / 727 * 100vh), calc(190 / 727 * 100vh));
+
+    animation-name: shift-8;
+    animation-duration: 7s;
+}
+
+#group14 {
+    height: 5vh;
+    transform: translate(calc(134 / 727 * 100vh), calc(174 / 727 * 100vh));
+
+    animation-name: shift-5;
+    animation-duration: 9s;
+}
+
+#group11 {
+    height: 10vh;
+    transform: translate(calc(110 / 727 * 100vh), calc(63 / 727 * 100vh));
+
+    animation-name: shift-10;
+    animation-duration: 4s;
+}
+
+#group10 {
+    height: 8vh;
+    transform: translate(calc(305 / 727 * 100vh), calc(50 / 727 * 100vh));
+
+    animation-name: shift-8;
+    animation-duration: 5s;
+}
+
+#group9 {
+    height: 8vh;
+    transform: translate(calc(365 / 727 * 100vh), calc(15 / 727 * 100vh));
+
+    animation-name: shift-8;
+    animation-duration: 7s;
+}
+
+@keyframes shift-10 {
+    0% {
+        padding-bottom: 0px;
+    }
+    50% {
+        height: calc(10vh + 60px);
+        padding-bottom: 60px;
+    }
+    100% {
+        padding-bottom: 0px;
+    }
+}
+
+@keyframes shift-5 {
+    0% {
+        padding-bottom: 0px;
+    }
+    50% {
+        height: calc(5vh + 40px);
+        padding-bottom: 40px;
+    }
+    100% {
+        padding-bottom: 0px;
+    }
+}
+
+@keyframes shift-8 {
+    0% {
+        padding-bottom: 0px;
+    }
+    50% {
+        height: calc(8vh + 20px);
+        padding-bottom: 20px;
+    }
+    100% {
+        padding-bottom: 0px;
+    }
+}
+
+/*
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+*/
+
+@media (max-width: 576px) {
+    #main-row {
+        border: none;
+    }
+
+    #left-pane {
+        height: 100vh;
+    }
+
+    #left-pane .main-img {
+        overflow: hidden;
+        max-width: none !important;
+        max-height: 100%;
+        height: 80vh;
+        width: auto;
+        transform: translateX(-22.5%);
+        vertical-align: center;
+        margin-top: calc(20vh / 2);
+    }
+
+    #left-pane #logo {
+        height: 25px;
+        width: 85px;
+        position: absolute;
+        top: 14px;
+        left: 14px;
+    }
+
+    #right-pane {
+        max-height: 100vh;
+    }
+
+    #right-pane h4 {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    #title-content img {
+        max-width: 70vw;
+    }
+
+    #title-content {
+        margin-bottom: 5em;
+        padding-top: 0em;
+    }
+
+    #email-form input {
+        max-width: calc((100%) - 10px);
+        font-size: 14px;
+    }
+
+    #submit {
+        max-width: calc((100%) - 10px);
+        max-height: 50px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    #end-text h6 {
+        font-size: 14px !important;
+    }
+
+    #end-text {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    #footer-place {
+        margin-top: -5px;
+    }
+
+    #center-piece {
+        display: none;
+    }
+
+    .shape {
+        display: none;
+    }
+}
+
+/*
+// Small devices (landscape phones, 576px and up)
+*/
+
+@media (min-width: 576px) { 
+ }
+
+/*
+// Medium devices (tablets, 768px and up)
+*/
+@media (min-width: 768px) { 
+
+ }
+
+/*
+// Large devices (desktops, 992px and up)
+*/
+@media (min-width: 992px) { 
+ }
+
+
+@media (max-width: 142vh) { 
+    .shape {
+        bottom: auto;
+        right: auto;
+        transform: none !important;
+    }
+
+    #group13 {
+        top: calc(110 / 727 * 100vh);
+        left: calc(300 / 727 * 100vh);
+    }
+
+    #group12 {
+        top: calc(340 / 727 * 100vh);
+        left: calc(265 / 727 * 100vh);
+    }
+
+    #group6 {
+        top: calc(512 / 727 * 100vh);
+        left: calc(321 / 727 * 100vh);
+    }
+
+    #group14 {
+        top: calc(505 / 727 * 100vh);
+        left: calc(494 / 727 * 100vh);
+    }
+
+    #group11 {
+        top: calc(370 / 727 * 100vh);
+        left: calc(445 / 727 * 100vh);
+    }
+
+    #group10 {
+        top: calc(375 / 727 * 100vh);
+        left: calc(670 / 727 * 100vh);
+    }
+
+    #group9 {
+        top: calc(340 / 727 * 100vh);
+        left: calc(725 / 727 * 100vh);
+    }
+
+    @keyframes shift-10 {
+        0% {
+            padding-top: 0px;
+        }
+        50% {
+            height: calc(10vh + 60px);
+            padding-top: 60px;
+        }
+        100% {
+            padding-top: 0px;
+        }
+    }
+
+    @keyframes shift-5 {
+        0% {
+            padding-top: 0px;
+        }
+        50% {
+            height: calc(5vh + 40px);
+            padding-top: 40px;
+        }
+        100% {
+            padding-top: 0px;
+        }
+    }
+
+    @keyframes shift-8 {
+        0% {
+            padding-top: 0px;
+        }
+        50% {
+            height: calc(8vh + 20px);
+            padding-top: 20px;
+        }
+        100% {
+            padding-top: 0px;
+        }
+    }
+ }
+
+/*
+// Extra large devices (large desktops, 1200px and up)
+*/
+@media (min-width: 1200px) { 
+
+ }
+
+

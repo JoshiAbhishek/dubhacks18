@@ -1,0 +1,5 @@
+git:
+    remote: https://github.com/HackGT/expo2016.git
+    branch: master
+
+target_port: 80

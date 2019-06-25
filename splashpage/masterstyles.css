@@ -1,0 +1,35 @@
+h4, h5, h6, p {
+    font-size: 14px !important;
+}
+
+#end-text {
+    padding-top: 1.5em !important;
+}
+
+#right-pane {
+    overflow: auto !important;
+}
+
+button > .opaq-text {
+    opacity: .7 !important;
+}
+
+button > .opaq-text:hover, button > .opaq-text:target, button > .opaq-text:focus {
+    opacity: .5 !important;
+}
+
+#main-row {
+    height: 100vh !important;
+    margin: 0em !important;
+}
+
+@media (max-width: 576px) {
+    #left-pane {
+        max-height: 80% !important;
+    }
+
+    #title-content {
+        margin-bottom: 5em;
+        padding-top: 5em;
+    }
+}
