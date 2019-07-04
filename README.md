@@ -1,4 +1,4 @@
-# DubHacks 2018 Tech
+# DubHacks 2018 Tech Projects
 
 The 2018 DubHacks Tech Team worked on multiple web applications and websites for organizing the University of Washington's annual hackathon. 
 
@@ -6,7 +6,6 @@ As the tech team lead, I worked with all members of the organizing team to devel
 
 Below is a list of the tech projects our team worked on throughout 2018 to organize DubHacks:
 
-# 2018 Projects: 
 
 ## Splash Page
 
@@ -14,11 +13,13 @@ DubHacks opens every new hackathon year with a splash page for the event where a
 
 ![Splash Page](./img/splashpage.jpg)
 
+
 ## Quill
 
 Quill is a web application originally built by the HackMIT team, and can be accessed [here](https://github.com/techx/quill). DubHacks maintains its own version of Quill for participants to submit applications, for admins to approve applications and travel reimbursements, and for volunteers to check in participants at the event.  
 
 ![Quill](./img/quill.jpg)
+
 
 ## Live Page
 
@@ -26,11 +27,13 @@ Our 2018 Live Page featured information for participants to reference during the
 
 ![Live Page](./img/livepage.jpg)
 
+
 ## Gavel
 
 [Gavel](https://github.com/anishathalye/gavel), another tool produced by the HackMIT team, was used by our judges to determine winners of our prizes this year. The tool uses pairwise comparisions for judges to choose the best projects. 
 
 ![Gavel](./img/gavel.jpg)
+
 
 ## Expo
 
@@ -38,11 +41,13 @@ To help judges find where teams were located and what prizes they were competing
 
 ![Expo](./img/expo.jpg)
 
+
 ## Look Back Page
 
 At the end of DubHacks 2018, we created a look back page with highlights from the event and a thank you message to our sponsors. 
 
 ![Look Back Page](./img/lookbackpage.jpg)
+
 
 ## DubHacks Stats
 
