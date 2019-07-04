@@ -1,1 +1,1 @@
-# stats
+# DubHacks Application Statistics
