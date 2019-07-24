@@ -11,9 +11,9 @@ Below is a list of the tech projects our team worked on throughout 2018 to organ
 
 DubHacks opens every new hackathon year with a splash page for the event where attendees can sign up to be notified when applications will start to be accepted. Our 2018 page featured multiple design assets and four unique color themes, one of which would be presented at random to participants.
 
-![Splash Page](./img/splashpage.jpg)
-
 View the 2018 DubHacks Splash Page [here](https://joshiabhishek.github.io/dubhacks18/splashpage/)!
+
+![Splash Page](./img/splashpage.jpg)
 
 ## Quill
 
@@ -26,9 +26,9 @@ Quill is a web application originally built by the HackMIT team, and can be acce
 
 Our 2018 Live Page featured information for participants to reference during the hackathon like the schedule of events, technical resources like sponsor companies' APIs, and prizes.
 
-![Live Page](./img/livepage.jpg)
-
 View the 2018 DubHacks Live Page [here](https://joshiabhishek.github.io/dubhacks18/live/)!
+
+![Live Page](./img/livepage.jpg)
 
 ## Gavel
 
@@ -48,9 +48,9 @@ To help judges find where teams were located and what prizes they were competing
 
 At the end of DubHacks 2018, we created a look back page with highlights from the event and a thank you message to our sponsors. 
 
-![Look Back Page](./img/lookbackpage.jpg)
-
 View the 2018 DubHacks Look Back Page [here](https://joshiabhishek.github.io/dubhacks18/lookback/)!
+
+![Look Back Page](./img/lookbackpage.jpg)
 
 ## DubHacks Stats
 
