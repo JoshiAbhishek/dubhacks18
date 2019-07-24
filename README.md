@@ -13,6 +13,7 @@ DubHacks opens every new hackathon year with a splash page for the event where a
 
 ![Splash Page](./img/splashpage.jpg)
 
+View the 2018 DubHacks Splash Page [here](https://joshiabhishek.github.io/dubhacks18/splashpage/)!
 
 ## Quill
 
@@ -27,6 +28,7 @@ Our 2018 Live Page featured information for participants to reference during the
 
 ![Live Page](./img/livepage.jpg)
 
+View the 2018 DubHacks Live Page [here](https://joshiabhishek.github.io/dubhacks18/live/)!
 
 ## Gavel
 
@@ -48,9 +50,12 @@ At the end of DubHacks 2018, we created a look back page with highlights from th
 
 ![Look Back Page](./img/lookbackpage.jpg)
 
+View the 2018 DubHacks Look Back Page [here](https://joshiabhishek.github.io/dubhacks18/lookback/)!
 
 ## DubHacks Stats
 
-The DubHacks Stats page was a new project in 2018, which involved collecting and analyzing application data from 2015-2018 DubHacks events and formatting them in an HTML page for participants and sponsors to view. I wanted to showcase this data in support of being able to talk about diversity at hackathons and in the tech industry in a transparent, data-supported way. We hope that the project can prompt similar conversations and openness across the hacker community.  
+The DubHacks Stats page was a new project in 2018, which involved collecting and analyzing application data from 2015-2018 DubHacks events and formatting them in an HTML page for participants and sponsors to view. I wanted to showcase this data in support of being able to talk about diversity at hackathons and in the tech industry in a transparent, data-supported way. And I hope that the project can prompt similar conversations and openness across the hacker community.  
+
+View the DubHacks Stats Page [here](https://joshiabhishek.github.io/dubhacks18/stats/)!
 
 ![DubHacks Stats](./img/dhstats.png)
